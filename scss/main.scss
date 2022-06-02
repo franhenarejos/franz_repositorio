@@ -1,0 +1,28 @@
+header {
+    .header__logo {
+                margin: auto;
+                display: block;
+                width: 28%;
+                height: 40%;
+                padding: 2%;
+        .header__nav {
+                    margin-top: 10px;
+                    margin-bottom: 30px;
+                    font-size: 20px;
+                    text-align: center;
+                    line-height: 2;
+                    background: rgb(30, 35, 48);
+            .header__nav__links {
+                        text-decoration: none;
+                        color: rgb(255, 255, 255);
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 500;
+                        margin-right: 75px;
+                        margin-left: 75px; 
+                .header__nav__links:hover {
+                            color: rgb(32, 32, 126);
+                                }
+                    } 
+                }
+        }    
+  } 
