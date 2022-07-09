@@ -6,7 +6,16 @@
   html {
     background: rgb(63,76,107);
   }
+
   
+  .contenedor {
+    width: auto;
+  }
+
+  .main_resp {
+    width: 68%;
+  }
+
   .header__logo {
     margin: auto;
     display: block;
@@ -43,7 +52,7 @@
     display: block;
     margin-right: 25px;
     margin-top: 36px;
-    width: 350px;
+    width: 32%;
   }
   
   section {
@@ -58,6 +67,7 @@
     position: center;
     color: rgb(0, 0, 0);
     font-family: 'Verdana', sans-serif;
+    width: 60%;
   }
   
   .principal__parrafo {
@@ -67,6 +77,7 @@
     text-justify: inter-word;
     color: rgb(0, 0, 0);
     font-family: 'Verdana', sans-serif;
+    width: 85%;
   
   }
   
@@ -114,6 +125,7 @@
     color: rgb(0, 0, 0);
     font-family: 'Verdana', sans-serif;
     margin-left: 100px;
+    width: 40%;
   }
 
   .trabajos__titulo {
@@ -131,6 +143,7 @@
     text-justify: inter-word;
     color: rgb(0, 0, 0);
     font-family: 'Verdana', sans-serif;
+    width: 100%;
   }
   
   .image__servicios2 {
@@ -138,6 +151,7 @@
     display: block;
     margin-right: 25px;
     margin-top: 36px;
+    width: 40%;
   }
   
   .gridservicios {
@@ -147,6 +161,9 @@
     grid-column-gap: 2px;
     grid-row-gap: 2px; 
     margin: 0 auto;
+    grid-auto-rows: minmax(125px, auto);
+    grid-gap: .5rem;
+    width: 100%;
   }
   
   .gridtrabajos {
@@ -155,6 +172,7 @@
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    width: 100%;
 
   }
 
@@ -250,7 +268,7 @@
     resize:none;
     display:block;
   }
-  
+
   @media screen and (max-width: 850px) {
     .gridservicios {
       grid-template-columns: 660px;

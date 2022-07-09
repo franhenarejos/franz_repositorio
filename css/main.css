@@ -5,6 +5,12 @@
 html {
   background: #3f4c6b; }
 
+.contenedor {
+  width: auto; }
+
+.main_resp {
+  width: 68%; }
+
 .header__logo {
   margin: auto;
   display: block;
@@ -36,7 +42,7 @@ html {
   display: block;
   margin-right: 25px;
   margin-top: 36px;
-  width: 350px; }
+  width: 32%; }
 
 section {
   margin-left: 25px;
@@ -48,7 +54,8 @@ section {
 .principal__titulo {
   position: center;
   color: black;
-  font-family: 'Verdana', sans-serif; }
+  font-family: 'Verdana', sans-serif;
+  width: 60%; }
 
 .principal__parrafo {
   margin-top: 10px;
@@ -56,7 +63,8 @@ section {
   text-align: justify;
   text-justify: inter-word;
   color: black;
-  font-family: 'Verdana', sans-serif; }
+  font-family: 'Verdana', sans-serif;
+  width: 85%; }
 
 footer {
   margin-top: 20px;
@@ -96,7 +104,8 @@ footer {
   position: center;
   color: black;
   font-family: 'Verdana', sans-serif;
-  margin-left: 100px; }
+  margin-left: 100px;
+  width: 40%; }
 
 .trabajos__titulo {
   margin-top: 15px;
@@ -111,13 +120,15 @@ footer {
   text-align: justify;
   text-justify: inter-word;
   color: black;
-  font-family: 'Verdana', sans-serif; }
+  font-family: 'Verdana', sans-serif;
+  width: 100%; }
 
 .image__servicios2 {
   float: right;
   display: block;
   margin-right: 25px;
-  margin-top: 36px; }
+  margin-top: 36px;
+  width: 40%; }
 
 .gridservicios {
   display: grid;
@@ -125,14 +136,18 @@ footer {
   grid-template-rows: 260px 260px;
   grid-column-gap: 2px;
   grid-row-gap: 2px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  grid-auto-rows: minmax(125px, auto);
+  grid-gap: .5rem;
+  width: 100%; }
 
 .gridtrabajos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
-  grid-row-gap: 0px; }
+  grid-row-gap: 0px;
+  width: 100%; }
 
 .gridbackline {
   display: grid;
