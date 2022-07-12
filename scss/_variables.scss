@@ -9,7 +9,7 @@
 
   
   .contenedor {
-    width: auto;
+    width: 100%;
   }
 
   .main_resp {
@@ -52,7 +52,8 @@
     display: block;
     margin-right: 25px;
     margin-top: 36px;
-    width: 32%;
+    margin-bottom: 20px;
+    min-width: 34%;;
   }
   
   section {
@@ -159,11 +160,8 @@
     grid-template-columns: 660px 660px;
     grid-template-rows: 260px 260px;
     grid-column-gap: 2px;
-    grid-row-gap: 2px; 
-    margin: 0 auto;
-    grid-auto-rows: minmax(125px, auto);
-    grid-gap: .5rem;
-    width: 100%;
+    grid-row-gap: 2px;
+    box-sizing: border-box;
   }
   
   .gridtrabajos {
@@ -186,7 +184,6 @@
 
   .grid-container{
     display: grid;
-    background-color: rgba(49, 49, 49, 0.596);
     grid-template-columns: 500px 300px 300px;
     grid-template-rows: 188px 188px;
     margin-left: 40px;
@@ -212,8 +209,7 @@
 
   .section__class {
     margin-right: 0px;
-    height: 200px;
-    width: 580px;
+    width: 85%;
     margin-bottom: 10px;
   }
 
@@ -269,11 +265,37 @@
     display:block;
   }
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 810px) {
     .gridservicios {
-      grid-template-columns: 660px;
+      grid-template-columns: 380px;
       grid-template-rows: 260px 260px 260px 260px;
     }
+    .gridtrabajos {
+      grid-template-columns: 420px;
+      grid-template-rows: 460px 460px 460px;
+      grid-row-gap: 20px;
+    }
+    .gridbackline {
+      grid-template-columns: 400px;
+      grid-template-rows: 340px 340px 340px;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+    }
+
+    .grid-container{
+      grid-template-columns: 420px;
+      grid-template-rows: 260px 124px 124px 124px 124px;
+      margin-left: auto;
+      }
+
+      .grid-container div{
+        background-color: rgba(49, 49, 49, 0.555);
+        border: 1px solid black;
+        margin-left: 20px;
+        margin-top: 8px;
+        width: 85%;
+        }
+
     .header__nav {
       margin-top: 6px;
       margin-bottom: 10px;
@@ -282,11 +304,8 @@
       line-height: 3;
     }
     .header__nav__links {
-      margin-right: 20px;
-      margin-left: 20px;
+      margin-right: 10px;
+      margin-left: 10px;
     }
   }
-@mixin animacion ($scale, $translateY) {
-    transform: scale($scale) translateY($translateY);
-    
-}
+
